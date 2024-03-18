@@ -17,7 +17,7 @@
 export const getPromise = (argue) => {
   // Your code goes here...
   return Number.isInteger(argue)
-    ? new Promise((resolve, reject) => {
+    ? new Promise((resolve) => {
       resolve(argue);
     })
     : 0;
