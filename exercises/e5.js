@@ -8,8 +8,9 @@
  *          export const Promise
  */
 
-export const attachTitle = () => {
+export const attachTitle = (argue) => {
   // Your code goes here...
+  return "DR. " + argue;
 };
 
 /**
@@ -22,6 +23,9 @@ export const attachTitle = () => {
 
 export const getPromise = () => {
   // Your code goes here...
+  return new Promise((resolve) => resolve("MANHATTAN"))
+  .then(attachTitle)
+  .then(console.log);
 };
 
 // === TEST YOURSELF ===
